@@ -256,8 +256,8 @@ def main():
     show_speed = os.environ.get(ENV_SHOW_SPEED, 'false')
     show_speed = 'true' in show_speed.lower()
     if show_speed:
-        print('speed_download: {:.1f} KiB, speed_upload: {:.1f} KiB'.format(
-            d['speed_download'] / 1024, d['speed_upload'] / 1024))
+        print('speed_download: {:.1f} MB, speed_upload: {:.1f} MB'.format(
+            d['speed_download'] / 1048576, d['speed_upload'] / 1048576))
 
 
 if __name__ == '__main__':
